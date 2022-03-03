@@ -31,7 +31,7 @@ const highlightSelection = () => {
     wrapper.style.backgroundColor = "#EEEE00";
     wrapper.style.color = "#111111";
     wrapper.classList.add("matt-highlight");
-    wrapper.style.fontSize = "1.2em";
+    //wrapper.style.fontSize = "1.2em";
     range.surroundContents(wrapper);
 }
 
@@ -45,7 +45,7 @@ const handle = (message) => {
 browser.runtime.onMessage.addListener(handle);
 
 document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey && event.key == "L") {
+    if (event.ctrlKey && event.key == "1") {
         highlightSelection();
     }
     if (event.ctrlKey && event.key == ":") {
